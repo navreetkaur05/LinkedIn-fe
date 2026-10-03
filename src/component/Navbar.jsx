@@ -14,22 +14,22 @@ const Navbar = () => {
             <span className="text-[9px] mt-1">Top Content</span>
           </Link>
 
-          <Link className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link to="/people" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
             <i className="fa-solid fa-users text-[16px]"></i>
             <span className="text-[9px] mt-1">People</span>
           </Link>
 
-          <Link className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link to="/learning" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
             <i className="fa-regular fa-square-caret-right text-[16px]"></i>
             <span className="text-[9px] mt-1">Learning</span>
           </Link>
 
-          <Link className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link to="/jobs" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
             <i className="fa-solid fa-briefcase text-[16px]"></i>
             <span className="text-[9px] mt-1">Jobs</span>
           </Link>
 
-          <Link className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link to="/gamespage" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
             <i className="fa-solid fa-puzzle-piece text-[16px]"></i>
             <span className="text-[9px] mt-1">Games</span>
           </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
 
           <Link to="/signup" className="h-[38px] px-5 rounded-full bg-blue-600 text-white
-             text-blue-600 text-sm font-medium
+             text-white-600 text-sm font-medium
              flex items-center hover:bg-blue-500">
             Join now
           </Link>

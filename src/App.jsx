@@ -7,6 +7,9 @@ import Signin from "./pages/Signin";
 import JoinNow from "./pages/JoinNow";
 import Feed from "./pages/Feed";
 import TopContent from "./pages/TopContent";
+import GamesPage from "./pages/GamesPage";
+import Learning from "./pages/Learning";
+import Jobs from "./pages/Jobs";
 
 const App = () => {
   return (
@@ -18,7 +21,9 @@ const App = () => {
         <Route path="/feed" element= {<Feed />}/>
         <Route path="/people" element={<People />} />
         <Route path="/topcontent" element={<TopContent />} />
-
+        <Route path="/gamespage" element={<GamesPage />} />
+        <Route path="/learning" element={<Learning />} />
+        <Route path="/jobs" element={<Jobs />} />
       </Routes>
     </>
   );
