@@ -16,7 +16,7 @@ import Footer from "../component/Footer";
 
 const Home = () => {
     return(<>
-        <Navbar />
+        
         <Hero/>
         <Explore />
         <FindJob />
@@ -28,7 +28,7 @@ const Home = () => {
         <WhoIsLinkedInFor />
         <DreamStory />
         <JoinLinkedIn />
-        <Footer />
+        
     </>)
 }
 

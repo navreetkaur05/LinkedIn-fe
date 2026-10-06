@@ -59,26 +59,26 @@ const GamesPage = () => {
       </div>
 
       <div
-        class="h-[81px] flex overflow-hidden
+        className="h-[81px] flex overflow-hidden
                border border-gray-200 rounded-md
                mb-[6px]
                hover:shadow-sm hover:-translate-y-[1px]
                transition cursor-pointer"
       >
 
-        <div class="flex-1 p-[11px] flex flex-col justify-between">
+        <div className="flex-1 p-[11px] flex flex-col justify-between">
 
-          <span class="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500">
             Piece it together
           </span>
 
-          <span class="text-[18px] font-medium">
+          <span className="text-[18px] font-medium">
             Patches
           </span>
 
         </div>
 
-        <div class="w-[71px] bg-[#FFDADA] flex items-center justify-center">
+        <div className="w-[71px] bg-[#FFDADA] flex items-center justify-center">
 
           <div className="w-[70px] flex items-center justify-center">
 
@@ -109,26 +109,26 @@ const GamesPage = () => {
       </div>
 
       <div
-        class="h-[81px] flex overflow-hidden
+        className="h-[81px] flex overflow-hidden
                border border-gray-200 rounded-md
                mb-[6px]
                hover:shadow-sm hover:-translate-y-[1px]
                transition cursor-pointer"
       >
 
-        <div class="flex-1 p-[11px] flex flex-col justify-between">
+        <div className ="flex-1 p-[11px] flex flex-col justify-between">
 
-          <span class="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500">
             The classic game, made mini
           </span>
 
-          <span class="text-[18px] font-medium">
+          <span className="text-[18px] font-medium">
             Mini Sudoku
           </span>
 
         </div>
 
-        <div class="w-[71px] bg-[#D1F6EB] flex items-center justify-center">
+        <div className="w-[71px] bg-[#D1F6EB] flex items-center justify-center">
 
          <div className="w-[70px] flex items-center justify-center">
 
@@ -159,26 +159,26 @@ const GamesPage = () => {
       </div>
 
       <div
-        class="h-[81px] flex overflow-hidden
+        className="h-[81px] flex overflow-hidden
                border border-gray-200 rounded-md
                mb-[6px]
                hover:shadow-sm hover:-translate-y-[1px]
                transition cursor-pointer"
       >
 
-        <div class="flex-1 p-[11px] flex flex-col justify-between">
+        <div className="flex-1 p-[11px] flex flex-col justify-between">
 
-          <span class="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500">
             Complete the path
           </span>
 
-          <span class="text-[18px] font-medium">
+          <span className="text-[18px] font-medium">
             Zip
           </span>
 
         </div>
 
-        <div class="w-[71px] bg-[#FFDBCA] flex items-center justify-center">
+        <div className="w-[71px] bg-[#FFDBCA] flex items-center justify-center">
 
           <div className="w-[70px] flex items-center justify-center">
 
@@ -209,26 +209,26 @@ const GamesPage = () => {
       </div>
 
       <div
-        class="h-[81px] flex overflow-hidden
+        className="h-[81px] flex overflow-hidden
                border border-gray-200 rounded-md
                mb-[6px]
                hover:shadow-sm hover:-translate-y-[1px]
                transition cursor-pointer"
       >
 
-        <div class="flex-1 p-[11px] flex flex-col justify-between">
+        <div className="flex-1 p-[11px] flex flex-col justify-between">
 
-          <span class="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500">
             Harmonize the grid
           </span>
 
-          <span class="text-[18px] font-medium">
+          <span className="text-[18px] font-medium">
             Tango
           </span>
 
         </div>
 
-        <div class="w-[71px] bg-[#E8EDF2] flex items-center justify-center">
+        <div className="w-[71px] bg-[#E8EDF2] flex items-center justify-center">
 
           <div className="w-[70px] flex items-center justify-center">
 
@@ -259,26 +259,26 @@ const GamesPage = () => {
       </div>
 
       <div
-        class="h-[81px] flex overflow-hidden
+        className="h-[81px] flex overflow-hidden
                border border-gray-200 rounded-md
                mb-[6px]
                hover:shadow-sm hover:-translate-y-[1px]
                transition cursor-pointer"
       >
 
-        <div class="flex-1 p-[11px] flex flex-col justify-between">
+        <div className="flex-1 p-[11px] flex flex-col justify-between">
 
-          <span class="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500">
             Crown each region
           </span>
 
-          <span class="text-[18px] font-medium">
+          <span className="text-[18px] font-medium">
             Queens
           </span>
 
         </div>
 
-        <div class="w-[71px] bg-[#F0E4FC] flex items-center justify-center">
+        <div className="w-[71px] bg-[#F0E4FC] flex items-center justify-center">
 
           <div className="w-[70px] flex items-center justify-center">
 
@@ -310,26 +310,26 @@ const GamesPage = () => {
 
 
       <div
-        class="h-[81px] flex overflow-hidden
+        className="h-[81px] flex overflow-hidden
                border border-gray-200 rounded-md
                mb-[6px]
                hover:shadow-sm hover:-translate-y-[1px]
                transition cursor-pointer"
       >
 
-        <div class="flex-1 p-[11px] flex flex-col justify-between">
+        <div className="flex-1 p-[11px] flex flex-col justify-between">
 
-          <span class="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500">
             Guess the category
           </span>
 
-          <span class="text-[18px] font-medium">
+          <span className="text-[18px] font-medium">
             Pinpoint
           </span>
 
         </div>
 
-        <div class="w-[71px] bg-[#DCECFB] flex items-center justify-center">
+        <div className="w-[71px] bg-[#DCECFB] flex items-center justify-center">
 
           <div className="w-[70px] flex items-center justify-center">
 
@@ -360,26 +360,26 @@ const GamesPage = () => {
       </div>
 
       <div
-        class="h-[81px] flex overflow-hidden
+        className="h-[81px] flex overflow-hidden
                border border-gray-200 rounded-md
                mb-[5px]
                hover:shadow-sm hover:-translate-y-[1px]
                transition cursor-pointer"
       >
 
-        <div class="flex-1 p-[11px] flex flex-col justify-between">
+        <div className="flex-1 p-[11px] flex flex-col justify-between">
 
-          <span class="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500">
             Unlock a trivia ladder
           </span>
 
-          <span class="text-[18px] font-medium">
+          <span className="text-[18px] font-medium">
             Crossclimb
           </span>
 
         </div>
 
-        <div class="w-[71px] bg-[#D5F5F7] flex items-center justify-center">
+        <div className="w-[71px] bg-[#D5F5F7] flex items-center justify-center">
 
           <div className="w-[70px] flex items-center justify-center">
 
