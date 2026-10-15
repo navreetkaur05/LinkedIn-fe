@@ -1,4 +1,5 @@
 import react, {useState} from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import GoogleButton from "../component/buttons/GoogleButton";
 import MicrosoftButton from "../component/buttons/MicrosoftButton";
@@ -89,14 +90,14 @@ const Signin = () => {
             <span className="text-[15px] text-gray-800">Keep me signed in</span>
           </div>
 
-          <button
+          <Link to="/feed"
             onClick={loginUser}
-            className="w-full h-[43px] bg-blue-600 hover:bg-blue-700
+            className="flex items-center justify-center w-full h-[43px] bg-blue-600 hover:bg-blue-700
           text-white rounded-full font-semibold text-[14px]
            mt-4"
           >
             Sign in
-          </button>
+          </Link>
 
           {message && (
             <p className="text-center text-blue-600 mt-3">{message}</p>

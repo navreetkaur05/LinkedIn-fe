@@ -10,6 +10,8 @@ import TopContent from "./pages/TopContent";
 import GamesPage from "./pages/GamesPage";
 import Learning from "./pages/Learning";
 import Jobs from "./pages/Jobs";
+import Profile from "./pages/Profile";
+import Skills from "./component/Skills";
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/gamespage" element={<GamesPage />} />
         <Route path="/learning" element={<Learning />} />
         <Route path="/jobs" element={<Jobs />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </>
   );

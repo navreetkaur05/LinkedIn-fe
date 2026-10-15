@@ -98,9 +98,9 @@ const JoinNow = () => {
             
           <p className="text-[15px] text-gray-700 mb-5 ml-[90px] mt-[40px]">
             Already on LinkedIn?{" "}
-            <a href="" className="text-blue-600 font-medium hover:underline">
+            <Link to="/profile" className="text-blue-600 font-medium hover:underline">
               Sign in
-            </a>
+            </Link>
           </p>
           </div>
       </div>
