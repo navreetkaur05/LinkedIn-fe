@@ -1,19 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ProfilePic from "./ProfilePic";
 
 const Left = () => {
   return (
     <>
-      <Link to="/profile" className="p-6 ml-7">
-        <div className="bg-white rounded-lg border border-gray-300 overflow-hidden h-[200px] w-[250px]">
+      <div className="p-3 w-[25%]">
+        <div className="bg-white rounded-lg border border-gray-300 overflow-hidden h-[200px] w-[100%]">
           <div className="h-[55px] bg-[#b6cde0] relative">
             <div className="absolute -bottom-8 left-[52px]">
               <div className="w-[58px] h-[58px] rounded-full bg-gray-400 border-2 border-white overflow-hidden">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
+                <ProfilePic />
               </div>
 
               <div className="absolute -right-1 bottom-0 text-blue-900 rounded-full w-6 h-6 flex items-center justify-center">
@@ -23,7 +20,9 @@ const Left = () => {
           </div>
 
           <div className="pt-10 px-3 pb-3">
-            <h2 className="font-semibold text-[16px]">Navreet Kaur</h2>
+            <Link to="/profile">
+              <h2 className="font-semibold text-[16px]">Navreet Kaur</h2>
+            </Link>
 
             <p className="text-[10px] leading-3 mt-1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
@@ -40,7 +39,7 @@ const Left = () => {
           </div>
         </div>
 
-        <div className="bg-white border border-gray-300 rounded-lg mt-2 p-3 h-[90px] w-[250px]">
+        <div className="bg-white border border-gray-300 rounded-lg mt-2 p-3 h-[90px] w-[100%]">
           <p className="text-[9px] text-gray-500">See how Premium helps you</p>
 
           <p className="text-[9px] text-gray-500">achieve your goals</p>
@@ -50,7 +49,7 @@ const Left = () => {
           <p className="text-[10px]">Premium</p>
         </div>
 
-        <div className="bg-white border border-gray-300 rounded-lg mt-2 p-3 h-[70px] w-[250px]">
+        <div className="bg-white border border-gray-300 rounded-lg mt-2 p-3 h-[70px] w-[100%]">
           <div className="flex justify-between text-[10px]">
             <span>Profile viewers</span>
 
@@ -65,7 +64,7 @@ const Left = () => {
           </a>
         </div>
 
-        <div className="bg-white border border-gray-300 rounded-lg mt-2 p-3 h-[150px] w-[250px] flex flex-col gap-2">
+        <div className="bg-white border border-gray-300 rounded-lg mt-2 p-3 h-[150px] w-[100%] flex flex-col gap-2">
           <span>
             <i class="fa-solid fa-bookmark"></i> Saved items
           </span>
@@ -79,7 +78,7 @@ const Left = () => {
             <i class="fa-solid fa-calendar-days"></i> Events
           </span>
         </div>
-      </Link>
+      </div>
     </>
   );
 };

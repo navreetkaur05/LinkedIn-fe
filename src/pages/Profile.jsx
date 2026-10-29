@@ -3,11 +3,15 @@ import NavbarFeed from "../component/NavbarFeed";
 import ProfileButton from "../component/buttons/ProfileButtons";
 import Skills from "../component/Skills";
 import ExperienceForm from "../component/ExperienceForm";
+import { BACKEND_URL } from "../config/constant";
+import ProfilePic from "../component/ProfilePic";
+import Education from "../component/Education";
+import Experience from "../component/Experience";
 
 const Profile = () => {
   const [showSkills, setShowSkills] = useState(false);
   const [showExperience, setShowExperience] = useState(false);
-const [experiences, setExperiences] = useState([]);
+  const [experiences, setExperiences] = useState([]);
 
   return (
     <>
@@ -22,12 +26,7 @@ const [experiences, setExperiences] = useState([]);
             />
 
             <div className="p-5">
-              <img
-                src="https://i.pinimg.com/236x/70/78/88/707888a23862a1e94597c925342cf817.jpg?nii=t"
-                alt=""
-                className="w-24 h-24 -mt-16 mb-3 rounded-full border-4 border-white flex items-center justify-center text-3xl"
-              />
-
+              <ProfilePic />
               <h2 className="text-2xl font-semibold">Navreet Kaur</h2>
 
               <p className="text-sm mt-2">
@@ -98,80 +97,8 @@ const [experiences, setExperiences] = useState([]);
             <div className="flex flex-col gap-3 mt-4"></div>
           </div>
 
-          
-<div className="bg-white border rounded-xl p-5">
-  <div className="flex justify-between items-center">
-    <h2 className="text-lg font-semibold">Experience</h2>
-
-    <button
-      onClick={() => setShowExperience(true)}
-      className="text-2xl"
-    >
-      <i className="fa-solid fa-plus"></i>
-    </button>
-  </div>
-
-  {experiences.map((experience, index) => (
-    <div
-      key={index}
-      className="border rounded-lg p-4 mt-4"
-    >
-      <h3 className="font-semibold">{exp.title}</h3>
-
-      <p className="text-sm">{exp.organization}</p>
-
-      <p className="text-sm text-gray-500 mt-1">
-        {exp.startMonth} {exp.startYear} –{" "}
-        {exp.currentlyWorking
-          ? "Present"
-          : `${exp.endMonth} ${exp.endYear}`}
-      </p>
-
-      
-
-      <p className="text-sm mt-3 whitespace-pre-line">
-        {exp.highlights}
-      </p>
-
-      {experience.skills.length > 0 && (
-        <p className="text-sm mt-3">
-          Skills: {exp.skills.join(", ")}
-        </p>
-      )}
-    </div>
-  ))}
-
-  {showExperience && (
-    <ExperienceForm
-      onClose={() => setShowExperience(false)}
-      onSave={(newExperience) =>
-        setExperiences((previous) => [...experiences, newExperience])
-      }
-    />
-  )}
-</div>
-
-
-          <div className="bg-white border rounded-xl p-5">
-            <div className="flex justify-between items-center">
-              <h2 className="text-lg font-semibold">Education</h2>
-              <div className="flex items-center gap-6">
-                <i className="fa-solid fa-plus cursor-pointer text-2xl"></i>
-                <i className="fa-solid fa-pencil cursor-pointer text-xl"></i>
-              </div>
-            </div>
-
-            <div className="border rounded-lg p-4 mt-4">
-              <h3 className="font-semibold">
-                Baba Banda Singh Bahadur Engineering College
-              </h3>
-              <p className="text-sm mt-2">
-                B.Tech - Computer Science and Engineering
-              </p>
-              <p className="text-sm text-gray-500 mt-1">2023 – 2027</p>
-              <p className="text-sm mt-2">CGPA: 8.3/10</p>
-            </div>
-          </div>
+          <Experience />
+          <Education />
 
           <div className="bg-white border rounded-xl p-5">
             <div className="flex justify-between items-center">
@@ -188,9 +115,7 @@ const [experiences, setExperiences] = useState([]);
                 {/* <i className="fa-solid fa-pencil cursor-pointer text-xl"></i> */}
               </div>
             </div>
-            {showSkills && (
-              <Skills onClose={() => setShowSkills(false)} />
-              )}
+            {showSkills && <Skills onClose={() => setShowSkills(false)} />}
 
             <div className="flex flex-wrap gap-2 mt-4">
               <span className="border rounded-full px-3 py-2">React.js</span>

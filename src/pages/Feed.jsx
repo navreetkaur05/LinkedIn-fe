@@ -1,18 +1,20 @@
-import react from "react"
-import Left from  "../component/Left"
+import react from "react";
+import Left from "../component/Left";
 import NavbarFeed from "../component/NavbarFeed";
 import Middle from "../component/Middle";
 import Right from "../component/Right";
 
 const Feed = () => {
-    return(<>
-    <NavbarFeed />
-    <section className="flex">
+  return (
+    <>
+      <NavbarFeed />
+      <section className="flex max-w-[1100px] mx-auto">
         <Left />
         <Middle />
         <Right />
-        </section>
-    </>)
-}
+      </section>
+    </>
+  );
+};
 
 export default Feed;

@@ -1,4 +1,3 @@
-
 const ExperienceForm = ({ onClose, onSave }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +16,10 @@ const ExperienceForm = ({ onClose, onSave }) => {
       endYear: form.endYear.value,
       currentlyWorking: form.currentlyWorking.checked,
       highlights: form.highlights.value,
-      skills: form.skills.value.split(",").map((s) => s.trim()).filter(Boolean),
+      skills: form.skills.value
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean),
     });
 
     onClose();
@@ -26,7 +28,6 @@ const ExperienceForm = ({ onClose, onSave }) => {
   return (
     <div className="fixed inset-0 z-50 bg-black/50 flex justify-center items-center p-3">
       <div className="bg-white w-full max-w-2xl rounded-lg shadow-lg max-h-[95vh] overflow-y-auto">
-
         {/* Header */}
         <div className="flex justify-between items-center p-4 border-b">
           <h2 className="text-xl font-semibold">Edit experience</h2>
@@ -36,7 +37,6 @@ const ExperienceForm = ({ onClose, onSave }) => {
         </div>
 
         <form onSubmit={handleSubmit} className="p-5 space-y-4">
-
           {/* Notify network */}
           <div className="bg-slate-100 p-4 flex justify-between items-center">
             <div>
@@ -92,7 +92,10 @@ const ExperienceForm = ({ onClose, onSave }) => {
 
             <div className="sm:col-span-2">
               <label className="block text-sm mb-1">Employment type</label>
-              <select name="employmentType" className="w-full border rounded p-2">
+              <select
+                name="employmentType"
+                className="w-full border rounded p-2"
+              >
                 <option value="">Select employment type</option>
                 <option>Full-time</option>
                 <option>Part-time</option>
@@ -106,19 +109,19 @@ const ExperienceForm = ({ onClose, onSave }) => {
 
           {/* Current role */}
           <label className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              name="currentlyWorking"
-              defaultChecked
-            />
-            I am currently working in this role
+            <input type="checkbox" name="currentlyWorking" defaultChecked />I am
+            currently working in this role
           </label>
 
           {/* Dates */}
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm mb-1">Start month*</label>
-              <select name="startMonth" required className="w-full border rounded p-2">
+              <select
+                name="startMonth"
+                required
+                className="w-full border rounded p-2"
+              >
                 <option>January</option>
                 <option>February</option>
                 <option>March</option>
@@ -136,7 +139,11 @@ const ExperienceForm = ({ onClose, onSave }) => {
 
             <div>
               <label className="block text-sm mb-1">Start year*</label>
-              <select name="startYear" required className="w-full border rounded p-2">
+              <select
+                name="startYear"
+                required
+                className="w-full border rounded p-2"
+              >
                 <option>2024</option>
                 <option>2025</option>
                 <option selected>2026</option>

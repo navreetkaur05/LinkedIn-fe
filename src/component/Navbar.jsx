@@ -9,27 +9,42 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center justify-end flex-1 gap-5">
-          <Link to="/topcontent" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link
+            to="/topcontent"
+            className="flex flex-col items-center justify-center text-gray-600 cursor-pointer"
+          >
             <i className="fa-solid fa-rocket text-[16px]"></i>
             <span className="text-[9px] mt-1">Top Content</span>
           </Link>
 
-          <Link to="/people" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link
+            to="/people"
+            className="flex flex-col items-center justify-center text-gray-600 cursor-pointer"
+          >
             <i className="fa-solid fa-users text-[16px]"></i>
             <span className="text-[9px] mt-1">People</span>
           </Link>
 
-          <Link to="/learning" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link
+            to="/learning"
+            className="flex flex-col items-center justify-center text-gray-600 cursor-pointer"
+          >
             <i className="fa-regular fa-square-caret-right text-[16px]"></i>
             <span className="text-[9px] mt-1">Learning</span>
           </Link>
 
-          <Link to="/jobs" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link
+            to="/jobs"
+            className="flex flex-col items-center justify-center text-gray-600 cursor-pointer"
+          >
             <i className="fa-solid fa-briefcase text-[16px]"></i>
             <span className="text-[9px] mt-1">Jobs</span>
           </Link>
 
-          <Link to="/gamespage" className="flex flex-col items-center justify-center text-gray-600 cursor-pointer">
+          <Link
+            to="/gamespage"
+            className="flex flex-col items-center justify-center text-gray-600 cursor-pointer"
+          >
             <i className="fa-solid fa-puzzle-piece text-[16px]"></i>
             <span className="text-[9px] mt-1">Games</span>
           </Link>
@@ -50,9 +65,12 @@ const Navbar = () => {
             Sign in
           </Link>
 
-          <Link to="/signup" className="h-[38px] px-5 rounded-full bg-blue-600 text-white
+          <Link
+            to="/signup"
+            className="h-[38px] px-5 rounded-full bg-blue-600 text-white
              text-white-600 text-sm font-medium
-             flex items-center hover:bg-blue-500">
+             flex items-center hover:bg-blue-500"
+          >
             Join now
           </Link>
         </div>

@@ -111,7 +111,8 @@ const Jobs = () => {
           </button>
 
           <span className="ml-auto text-[9px] text-gray-700">
-            <i className="fa-solid fa-flag text-[9px]"></i> Where are the filters?
+            <i className="fa-solid fa-flag text-[9px]"></i> Where are the
+            filters?
           </span>
         </div>
       </nav>

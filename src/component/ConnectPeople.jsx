@@ -4,9 +4,7 @@ const ConnectPeople = () => {
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-[550px] mx-auto flex justify-between gap-20">
-
         <div className="w-[250px]">
-
           <img
             src="https://static.licdn.com/aero-v1/sc/h/43h6n82li4xu0q23s8jqizk6j"
             alt="Connect with people"
@@ -25,12 +23,9 @@ const ConnectPeople = () => {
           >
             Find people you know
           </button>
-
         </div>
 
-
         <div className="w-[250px]">
-
           <img
             src="https://static.licdn.com/aero-v1/sc/h/1dhh8rr3wohexkaya6jhn2y8j"
             alt="Learn skills"
@@ -51,18 +46,15 @@ const ConnectPeople = () => {
                        px-3
                        hover:bg-gray-50"
           >
-
-<select id="cars" name="cars">
-  <option value="">Choose a topic to learn about</option>
-  <option value="Bussiness">Bussiness</option>
-  <option value="Software">Software Development</option>
-  <option value="Customer">Customer Services</option>
-  <option value="Resources">Human Resources</option>
-</select>
+            <select id="cars" name="cars">
+              <option value="">Choose a topic to learn about</option>
+              <option value="Bussiness">Bussiness</option>
+              <option value="Software">Software Development</option>
+              <option value="Customer">Customer Services</option>
+              <option value="Resources">Human Resources</option>
+            </select>
           </button>
-
         </div>
-
       </div>
     </section>
   );

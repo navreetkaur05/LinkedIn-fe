@@ -4,9 +4,7 @@ const Hero = () => {
   return (
     <section className="w-full min-h-[500px] bg-white">
       <div className="max-w-[1200px] mx-auto flex flex-row items-center justify-between px-8 pt-10">
-
         <div className="w-[550px] flex flex-col items-start">
-
           <h1 className="text-[35px] leading-[1.1] font-normal text-black mb-5">
             Build your professional brand & network to get ahead in your career
           </h1>
@@ -28,10 +26,12 @@ const Hero = () => {
           <button
             className="w-[268px] h-[40px] bg-white border border-gray-500 
                        rounded-full text-gray-700 text-[12px] 
-                       hover:bg-gray-100 mb-4"> Sign in with email
+                       hover:bg-gray-100 mb-4"
+          >
+            {" "}
+            Sign in with email
           </button>
 
-          
           <p className="w-[300px] text-center text-[9px] leading-4 text-gray-500 mb-5">
             By clicking Continue to join or sign in, you agree to LinkedIn's{" "}
             <a href="" className="text-blue-700 hover:underline">
@@ -50,14 +50,10 @@ const Hero = () => {
 
           <p className="text-[12px] text-gray-700 ml-[78px]">
             New to LinkedIn?{" "}
-            <a
-              href=""
-              className="text-blue-600 font-medium hover:underline"
-            >
+            <a href="" className="text-blue-600 font-medium hover:underline">
               Join now
             </a>
           </p>
-
         </div>
 
         <div className="w-[600px] flex justify-center items-center">
@@ -67,7 +63,6 @@ const Hero = () => {
             className="w-[520px] h-auto"
           />
         </div>
-
       </div>
     </section>
   );

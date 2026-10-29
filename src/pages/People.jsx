@@ -40,8 +40,6 @@ const People = () => {
           </div>
 
           <div className="flex items-center gap-6 ml-[50px]">
-            
-
             <a href="/signup" className="text-gray-800 text-[15px] font-medium">
               Join now
             </a>
@@ -57,19 +55,17 @@ const People = () => {
         </div>
       </nav>
 
-<div className="flex flex-col items-center pt-[140px]">
+      <div className="flex flex-col items-center pt-[140px]">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-hs9uC4IG-Hy5bvJrYR-QPsB1H1xLPI-K98ECBSAEEs3P1RXD4m6nb_K0&s=10"
+          alt=""
+          className="w-[250px] h-[250px] rounded-full"
+        />
 
-  <img
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-hs9uC4IG-Hy5bvJrYR-QPsB1H1xLPI-K98ECBSAEEs3P1RXD4m6nb_K0&s=10"
-    alt=""
-    className="w-[250px] h-[250px] rounded-full"
-  />
-
-  <p className="text-[20px] text-gray-900 mt-[40px]">
-    Try searching for your co-worker, classmate, professor, or friend.
-  </p>
-
-</div>
+        <p className="text-[20px] text-gray-900 mt-[40px]">
+          Try searching for your co-worker, classmate, professor, or friend.
+        </p>
+      </div>
     </div>
   );
 };

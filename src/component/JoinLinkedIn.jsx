@@ -3,7 +3,6 @@ import React from "react";
 const JoinLinkedIn = () => {
   return (
     <section className="w-full h-[490px] relative overflow-hidden">
-
       <img
         src="/JoinLinkedIn.png"
         alt=""
@@ -11,7 +10,6 @@ const JoinLinkedIn = () => {
       />
 
       <div className="relative z-10 max-w-[1000px] mx-auto pt-[60px]">
-
         <h1 className="text-[25px] leading-[32px] font-bold text-gray-900 w-[550px]">
           Join your colleagues, classmates, and friends on LinkedIn
         </h1>
@@ -23,9 +21,7 @@ const JoinLinkedIn = () => {
         >
           Get started
         </button>
-
       </div>
-
     </section>
   );
 };
